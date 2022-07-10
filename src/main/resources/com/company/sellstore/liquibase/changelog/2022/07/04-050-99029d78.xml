@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+    <changeSet id="1" author="SellStore">
+        <addColumn tableName="SELL_POSITION">
+            <column name="DETAIL_ID" type="UUID"/>
+        </addColumn>
+
+        <addNotNullConstraint columnName="DETAIL_ID" tableName="SELL_POSITION"/>
+    </changeSet>
+    <changeSet id="2" author="SellStore">
+        <createIndex indexName="IDX_SELLPOSITION_DETAIL_ID" tableName="SELL_POSITION">
+            <column name="DETAIL_ID"/>
+        </createIndex>
+
+        <addForeignKeyConstraint baseColumnNames="DETAIL_ID" baseTableName="SELL_POSITION"
+                                 constraintName="FK_SELL_POSITION_ON_DETAIL" referencedColumnNames="ID"
+                                 referencedTableName="DETAIL"/>
+    </changeSet>
+    <changeSet id="3" author="SellStore">
+        <dropColumn columnName="SELL_POSITION_ID" tableName="DETAIL"/>
+    </changeSet>
+</databaseChangeLog>

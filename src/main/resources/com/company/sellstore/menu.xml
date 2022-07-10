@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu-config xmlns="http://jmix.io/schema/ui/menu">
+
+    <menu id="application" caption="msg://com.company.sellstore/menu.application" insertBefore="administration">
+        <item screen="User.browse" caption="msg://com.company.sellstore.screen.user/UserBrowse.caption"/>
+        <item screen="themeSettingsScreen" caption="msg://io.jmix.ui.app.themesettings/themeSettings.caption"/>
+        <item screen="Retailer.browse" caption="msg://com.company.sellstore.screen.retailer/retailerBrowse.menu"/>
+        <item screen="Detail.browse" caption="msg://com.company.sellstore.screen.detail/detailBrowse.menu"/>
+        <item screen="SellPosition.browse"
+              caption="msg://com.company.sellstore.screen.sellposition/sellPositionBrowse.menu"/>
+        <item screen="Buying.browse" caption="msg://com.company.sellstore.screen.buying/buyingBrowse.menu"/>
+        <item screen="Equality" caption="msg://com.company.sellstore.screen.equality/equality.menu"/>
+    </menu>
+
+</menu-config>

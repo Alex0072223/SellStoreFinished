@@ -1,0 +1,77 @@
+<window xmlns="http://jmix.io/schema/ui/window"
+        caption="msg://application.caption">
+
+    <data>
+        <!--<collection id="equalTablesDc"/>-->
+        <collection id="detailsDc" class="com.company.sellstore.entity.Detail" fetchPlan="_instance_name">
+            <loader id="detailsDl">
+                <query>
+                    <![CDATA[select e from Detail e]]>
+                </query>
+            </loader>
+        </collection>
+        <collection id="sellPositionsDc" class="com.company.sellstore.entity.SellPosition">
+            <fetchPlan extends="_base">
+                <property name="detail" fetchPlan="_base"/>
+            </fetchPlan>
+            <loader id="sellPositionsDl">
+                <query>
+                    <![CDATA[select e from SellPosition e where e.detail= :fullName]]>
+                </query>
+            </loader>
+        </collection>
+    </data>
+    <actions>
+        <action id="refreshAction" caption="msg://refreshAction.caption" icon="REFRESH_ACTION"/>
+    </actions>
+    <facets>
+        <dataLoadCoordinator auto="true"/>
+    </facets>
+    <layout>
+        <cssLayout id="horizontalWrap"
+                   stylename="jmix-drawer-layout">
+            <workArea id="workArea"
+                      stylename="jmix-workarea"
+                      height="100%">
+                <initialLayout spacing="true" margin="true" expand="equalTable">
+                    <hbox id="topBox" width="100%">
+
+                    <form id="form">
+                        <column width="400px">
+                            <entityComboBox id="detailSelector" caption="msg://detailSelector.caption"
+                                            optionsContainer="detailsDc"/>
+                            <hbox spacing="true" width="AUTO">
+                                <button id="refreshButton" action="refreshAction"/>
+                            </hbox>
+
+                        </column>
+                    </form>
+                    <vbox id="welcomeBox" height="100%">
+                        <label value="msg://application.welcomeLabel" align="MIDDLE_CENTER"/>
+                    </vbox>
+                    </hbox>
+                    <groupTable id="equalTable" width="100%" dataContainer="sellPositionsDc" caption="caption">
+                        <actions>
+                            <action id="refresh" type="refresh"/>
+                            <action id="showEntityInfo" type="showEntityInfo"/>
+                            <action id="view" type="view"/>
+                        </actions>
+                        <buttonsPanel alwaysVisible="true">
+                            <!--<button id="equalTableRefreshBtn" action="equalTable.refresh"
+                                    caption="msg://equalTableRefreshBtn.caption"/>-->
+                            <button id="equalTableShowEntityInfoBtn" action="equalTable.showEntityInfo"/>
+                            <button id="equalTableViewBtn" action="equalTable.view"/>
+                        </buttonsPanel>
+                        <columns>
+                            <column id="retailer"/>
+                            <column id="detail"/>
+                            <column id="cost"/>
+                        </columns>
+                        <simplePagination/>
+                    </groupTable>
+
+                </initialLayout>
+            </workArea>
+        </cssLayout>
+    </layout>
+</window>
