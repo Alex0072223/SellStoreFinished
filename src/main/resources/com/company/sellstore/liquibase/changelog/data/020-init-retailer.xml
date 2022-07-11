@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+
+
+    <changeSet id="1" author="SellStore" >
+
+        <insert tableName="RETAILER" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="7eaf591a-7fd5-5da4-4621-641216df429d"/>
+            <column name="NAME_ID" value="e293213b-a947-7251-059a-fc2650602885"/>
+            <column name="ADRESS" value="Cansass, faj st, crysler, 12"/>
+            <column name="PHONE" value="79172578768"/>
+            <column name="VERSION" value="1"/>
+        </insert>
+
+    </changeSet>
+    <changeSet id="2" author="SellStore" >
+
+
+        <insert tableName="RETAILER" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="466a0c61-80f2-d9e1-b8f8-88bfd1a5f1da"/>
+            <column name="NAME_ID" value="050d3958-641b-356e-3cc8-493c0986f4ec"/>
+            <column name="ADRESS" value="Kayir, Egypt"/>
+            <column name="PHONE" value="30526521132"/>
+            <column name="VERSION" value="3"/>
+        </insert>
+
+    </changeSet>
+    <changeSet id="3" author="SellStore" >
+
+        <insert tableName="RETAILER" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="de8e3e2d-76d3-b0d4-2543-85ed7b8ab40a"/>
+            <column name="NAME_ID" value="be2cf48b-f84b-d0a6-1627-64d32f9db432"/>
+            <column name="ADRESS" value="Краснодар, ул. Пушная, 25"/>
+            <column name="PHONE" value="79265468489"/>
+            <column name="VERSION" value="1"/>
+        </insert>
+
+
+    </changeSet>
+
+
+</databaseChangeLog>
+

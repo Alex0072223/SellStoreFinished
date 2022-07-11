@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+
+
+    <changeSet id="1" author="SellStore" >
+
+        <insert tableName="SELL_POSITION" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="09604a42-7e09-aeeb-9a9d-a1467f6a61f1"/>
+            <column name="COST" value="7500"/>
+            <column name="COUNT_" value="6"/>
+            <column name="RETAILER_ID" value="de8e3e2d-76d3-b0d4-2543-85ed7b8ab40a"/>
+            <column name="DETAIL_ID" value="8d848629-1fae-9ee5-518a-094490ccbfbc"/>
+            <column name="VERSION" value="1"/>
+        </insert>
+
+        <insert tableName="SELL_POSITION" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="1424c444-e612-c3df-efdb-22a28a15801b"/>
+            <column name="COST" value="20000"/>
+            <column name="COUNT_" value="4"/>
+            <column name="RETAILER_ID" value="466a0c61-80f2-d9e1-b8f8-88bfd1a5f1da"/>
+            <column name="DETAIL_ID" value="8d848629-1fae-9ee5-518a-094490ccbfbc"/>
+            <column name="VERSION" value="1"/>
+        </insert>
+
+        <insert tableName="SELL_POSITION" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="4f144931-8f8d-2958-4d5e-1fee9d90e1e6"/>
+            <column name="COST" value="1000"/>
+            <column name="COUNT_" value="46"/>
+            <column name="RETAILER_ID" value="7eaf591a-7fd4-5da4-4621-641216df429d"/>
+            <column name="DETAIL_ID" value="8f3e51c6-ef27-7b72-6218-6b9d88ad82a8"/>
+            <column name="VERSION" value="2"/>
+        </insert>
+
+        <insert tableName="SELL_POSITION" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="5d5add88-8059-95dc-3b4c-bf965918e828"/>
+            <column name="COST" value="15000"/>
+            <column name="COUNT_" value="10"/>
+            <column name="RETAILER_ID" value="7eaf591a-7fd4-5da4-4621-641216df429d"/>
+            <column name="DETAIL_ID" value="8d848629-1fae-9ee5-518a-094490ccbfbc"/>
+            <column name="VERSION" value="1"/>
+        </insert>
+
+        <insert tableName="SELL_POSITION" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="698caa49-cb89-6f4f-d82a-c1ca1c73e631"/>
+            <column name="COST" value="3500000"/>
+            <column name="COUNT_" value="9"/>
+            <column name="RETAILER_ID" value="de8e3e2d-76d3-b0d4-2543-85ed7b8ab40a"/>
+            <column name="DETAIL_ID" value="92b64663-f86a-183a-a0c8-67228ecc7393"/>
+            <column name="VERSION" value="3"/>
+        </insert>
+
+        <insert tableName="SELL_POSITION" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="8ac2747a-b110-b8cc-6068-86e544af9da9"/>
+            <column name="COST" value="5000000"/>
+            <column name="COUNT_" value="2"/>
+            <column name="RETAILER_ID" value="466a0c61-80f2-d9e1-b8f8-88bfd1a5f1da"/>
+            <column name="DETAIL_ID" value="92b64663-f86a-183a-a0c8-67228ecc7393"/>
+            <column name="VERSION" value="1"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>
+

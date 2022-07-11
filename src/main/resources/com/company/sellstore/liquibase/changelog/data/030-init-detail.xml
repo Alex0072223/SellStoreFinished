@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+
+
+    <changeSet id="1" author="SellStore" >
+
+        <insert tableName="DETAIL" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="8d848629-1fae-9ee5-518a-094490ccbfbc"/>
+            <column name="NAME" value="Kardan for Lada 2077"/>
+            <column name="ARTICLE" value="L-77-K"/>
+            <column name="VERSION" value="1"/>
+        </insert>
+
+        <insert tableName="DETAIL" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="8f3e51c6-ef27-7b72-6218-6b9d88ad82a8"/>
+            <column name="NAME" value="Колеса (УАЗ)"/>
+            <column name="ARTICLE" value="W-4-ZZ-U-P"/>
+            <column name="VERSION" value="1"/>
+        </insert>
+
+        <insert tableName="DETAIL" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="92b64663-f86a-183a-a0c8-67228ecc7393"/>
+            <column name="NAME" value="Death Star engine"/>
+            <column name="ARTICLE" value="K-1-77"/>
+            <column name="VERSION" value="1"/>
+        </insert>
+
+
+    </changeSet>
+
+
+</databaseChangeLog>
+

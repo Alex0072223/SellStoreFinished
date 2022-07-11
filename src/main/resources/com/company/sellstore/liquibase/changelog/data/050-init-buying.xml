@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+
+
+    <changeSet id="1" author="SellStore" >
+
+        <insert tableName="BUYING" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="2b932d7c-8298-bcc4-dc55-4bd37f539a78"/>
+            <column name="SELL_POSITION_ID" value="698caa49-cb89-6f4f-d82a-c1ca1c73e631"/>
+            <column name="COUNT_" value="1"/>
+            <column name="DATE_OF_BUYING" value="2022-07-11"/>
+            <column name="VERSION" value="1"/>
+        </insert>
+
+        <insert tableName="BUYING" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="f7471718-5b03-09ac-bafb-d9877d8fc89d"/>
+            <column name="SELL_POSITION_ID" value="4f144931-8f8d-2958-4d5e-1fee9d90e1e6"/>
+            <column name="COUNT_" value="4"/>
+            <column name="DATE_OF_BUYING" value="2022-07-11"/>
+            <column name="VERSION" value="1"/>
+        </insert>
+
+
+
+    </changeSet>
+
+
+</databaseChangeLog>
+
