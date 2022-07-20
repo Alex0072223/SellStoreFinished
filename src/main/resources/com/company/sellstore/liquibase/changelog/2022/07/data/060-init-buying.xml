@@ -11,7 +11,7 @@
 
         <insert tableName="BUYING" dbms="postgresql, mssql, hsqldb">
             <column name="ID" value="2b932d7c-8298-bcc4-dc55-4bd37f539a78"/>
-            <column name="SELL_POSITION_ID" value="698caa49-cb89-6f4f-d82a-c1ca1c73e631"/>
+            <column name="SELL_POSITION_ID" value="8ac2747a-b110-b8cc-6068-86e544af9da9"/>
             <column name="COUNT_" value="1"/>
             <column name="DATE_OF_BUYING" value="2022-07-11"/>
             <column name="VERSION" value="1"/>
@@ -19,7 +19,7 @@
 
         <insert tableName="BUYING" dbms="postgresql, mssql, hsqldb">
             <column name="ID" value="f7471718-5b03-09ac-bafb-d9877d8fc89d"/>
-            <column name="SELL_POSITION_ID" value="4f144931-8f8d-2958-4d5e-1fee9d90e1e6"/>
+            <column name="SELL_POSITION_ID" value="1424c444-e612-c3df-efdb-22a28a15801b"/>
             <column name="COUNT_" value="4"/>
             <column name="DATE_OF_BUYING" value="2022-07-11"/>
             <column name="VERSION" value="1"/>
